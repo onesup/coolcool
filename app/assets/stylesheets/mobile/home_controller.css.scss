@@ -1,103 +1,15 @@
 *{
-	font-family: '돋움',Dotum,Helvetica,'Apple SD Gothic Neo',Sans-serif;
+	margin:0;
+	padding:0;
 }
 body{
 	margin: 0;
-	background: #ffd900;
+	background: #fff;
 }
 .contain{
-	width: 92%;
-	margin:4%;
-}
-
-.header{
-	width: 100%;
-	margin-top: 3%;
-	margin-bottom: 2%;
-}
-.title{
-  width: 100%;
-}
-
-.title_label{
-	width: 85%;
-	margin: 3% 0 3% 0;
-}
-.movie{
 	width: 100%;
 }
-.img{
- text-align:center;	
-}
-.kdc_img{
-  width: 95%;
-}
-.movie{
-	width: 100%;
-	margin-bottom: 2%;
-}
-.thumb{
-	margin-bottom: 7%;
-}
-.thumb a{
-	display:block;
-	float:left;
-	width:33%;
-}
-.thumb a.t_02{
-	text-align:center;
-	width:34%;
-}
-.thumb a.t_03{
-	text-align:right;
-}
-.thumb a img{
-  width: 98%;
-}
 
-.outlink{
-	background:#fff;
-	padding:5% 4% 8%;
-}
-.outlink .inner{
-	width:100%;
-}
-.outlink .inner a{
-	display:block;
-	float:left;
-}
-.outlink .inner a.t_01{
-	width:56%;
-}
-.outlink .inner a.t_02{
-	width:22%;
-	text-align:right;
-}
-.outlink .inner a.t_03{
-	width:22%;
-	text-align:right;
-}
-.outlink .inner a img{
+div img{
 	width: 100%;
 }
-.outlink .inner a.t_02 img,
-.outlink .inner a.t_03 img{
-	width: 84%;
-}
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: ".";
-  clear: both;
-  height: 0;
-}
-* html .clearfix { height: 1%; }
-//.clearfix { display: block; }
-.clickable-link {
-  display: block;
-  text-indent: -9999em;
-}
-
-
