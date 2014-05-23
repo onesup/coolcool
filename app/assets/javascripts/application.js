@@ -21,4 +21,5 @@
 //= require jquery.maskedinput.min
 //= require jquery.modal
 //= require ZeroClipboard
+//= require owl.carousel
 //= require pc
