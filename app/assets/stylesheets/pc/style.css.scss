@@ -1,9 +1,11 @@
 styles.cssa{
   text-decoration: none;
 }
+
 img{
   border: 0;
 }
+
 *{
 	margin:0;
 	padding:0;
@@ -13,6 +15,7 @@ img{
   width:1000px;
   margin:0 auto;
 }
+
 .footer_contain{
 	background:#f1f1f1;
 }
@@ -20,4 +23,9 @@ img{
 .header_contain{
 	background: asset-url("pc/bg.jpg") no-repeat top center;
 	height:653px;
+}
+#carousel .item img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
