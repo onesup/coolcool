@@ -29,3 +29,13 @@ img{
     width: 100%;
     height: auto;
 }
+
+.inner_slide{
+	padding-top:60px;
+	height:640px;
+	background: asset-url("pc/bg_slide.jpg") no-repeat top center;
+}
+.inner_slide .inner{
+	width:652px;
+	margin:0 auto;
+}
