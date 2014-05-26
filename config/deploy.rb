@@ -1,8 +1,8 @@
 # config valid only for Capistrano 3.1
-lock '3.2.0'
+lock '3.2.1'
 
-set :application, 'kdc_youtube'
-set :repo_url, 'git@github.com:onesup/kdc_youtube.git'
+set :application, 'coolcool'
+set :repo_url, 'git@github.com:onesup/coolcool.git'
 set :scm_user, "onesup"
 
 
@@ -10,8 +10,8 @@ set :scm_user, "onesup"
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, "/home/deployer/www/kdc_youtube"
-set :user, "deployer"
+set :deploy_to, "/home/onesup/www/coolcool"
+set :user, "onesup"
 
 
 # Default value for :scm is :git
@@ -39,7 +39,7 @@ set :default_env, {
 }
 
 set :rbenv_type, :user
-set :rbenv_ruby, "2.1.1"
+set :rbenv_ruby, "2.1.2"
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5

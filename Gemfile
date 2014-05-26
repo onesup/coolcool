@@ -19,17 +19,17 @@ gem 'rspec-rails'
 gem 'factory_girl_rails'
 gem 'rest-client'
 gem 'json'
-gem 'nokogiri'
-gem 'nori' #xml parser
+# gem 'nokogiri'
+# gem 'nori' #xml parser
 gem 'useragent'
-gem 'sucker_punch', '~> 1.0'
+# gem 'sucker_punch', '~> 1.0'
 # gem 'sasha'
 gem 'font-awesome-rails'
 gem 'kaminari'
 gem 'debugger', group: [:development, :test]
 # gem 'dragonfly', "~>1.0.3"
-gem 'koala'
-gem 'yaml_db',  github: 'jetthoughts/yaml_db'
+# gem 'koala'
+# gem 'yaml_db',  github: 'jetthoughts/yaml_db'
 # gem 'rack-facebook-signed-request', :git => 'git://github.com/cmer/rack-facebook-signed-request.git'
 group :development do
   gem 'guard-rails',        group: :development
