@@ -24,3 +24,8 @@ img{
 	background: asset-url("pc/bg.jpg") no-repeat top center;
 	height:653px;
 }
+#carousel .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
