@@ -13,8 +13,7 @@ module Bday
       'application.js', 'application.css', 
       'admin.js', 'admin.css', 
       'web.css', 'web.js',
-      'mobile.css', 'mobile.js',
-      'facebook.css', 'facebook.js'
+      'mobile.css', 'mobile.js'
     ]
   end
 end
