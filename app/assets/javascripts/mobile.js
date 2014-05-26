@@ -12,9 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require phone
-//= require jquery.bpopup.min
-//= require jquery.customSelect.min
-//= require jquery.mask
-//= require kakao.link.js
 //= require owl.carousel
+//= require phone
