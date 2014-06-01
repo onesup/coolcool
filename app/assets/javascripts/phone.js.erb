@@ -6,3 +6,76 @@ $(document).ready(function(){
 		singleItem:true
 	});
 });
+
+$("#product1").click(function(e){
+  e.preventDefault();
+  product1_click();
+});
+$("#product2").click(function(e){
+  e.preventDefault();
+  product2_click();
+});
+$("#product3").click(function(e){
+  e.preventDefault();
+  product3_click();
+});
+$("#product4").click(function(e){
+  e.preventDefault();
+  product4_click();
+});
+
+function product1_click()
+{
+  $.ajax({
+    type: "POST",
+    url: "/viral_actions.json",
+    data: {
+      'viral_action[platform]': "product1",
+      'viral_action[device]': "mobile"
+    },
+    success: function (data) {
+  }
+ });
+}
+
+function product2_click()
+{
+  $.ajax({
+    type: "POST",
+    url: "/viral_actions.json",
+    data: {
+      'viral_action[platform]': "product2",
+      'viral_action[device]': "mobile"
+    },
+    success: function (data) {
+  }
+ });
+}
+
+function product3_click()
+{
+  $.ajax({
+    type: "POST",
+    url: "/viral_actions.json",
+    data: {
+      'viral_action[platform]': "product3",
+      'viral_action[device]': "mobile"
+    },
+    success: function (data) {
+  }
+ });
+}
+
+function product4_click()
+{
+  $.ajax({
+    type: "POST",
+    url: "/viral_actions.json",
+    data: {
+      'viral_action[platform]': "product4",
+      'viral_action[device]': "mobile"
+    },
+    success: function (data) {
+  }
+ });
+}
