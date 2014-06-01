@@ -12,24 +12,18 @@ class Admin::ViralActionsController < ApplicationController
       "count(*) as total_count")
     @viral_platform_counts_daily = ViralAction.select(
       "date(convert_tz(viral_actions.created_at,'+00:00','+09:00')) as created_date,
-      sum(case when viral_actions.platform = 'kakaostory' then 1 else 0 end) as kakaostory_count, 
-    	sum(case when viral_actions.platform = 'kakaotalk' then 1 else 0 end) as kakaotalk_count, 
-      sum(case when viral_actions.platform = 'purchase' then 1 else 0 end) as purchase_count, 
-    	sum(case when viral_actions.platform = 'youtube' then 1 else 0 end) as youtube_count,
-      sum(case when viral_actions.platform = 'Youtube_thumb_1' then 1 else 0 end) as youtube_thumb_1_count,
-      sum(case when viral_actions.platform = 'Youtube_thumb_2' then 1 else 0 end) as youtube_thumb_2_count,
-      sum(case when viral_actions.platform = 'Youtube_thumb_3' then 1 else 0 end) as youtube_thumb_3_count, 
+      sum(case when viral_actions.platform = 'product1' then 1 else 0 end) as product1_count, 
+    	sum(case when viral_actions.platform = 'product2' then 1 else 0 end) as product2_count, 
+      sum(case when viral_actions.platform = 'product3' then 1 else 0 end) as product3_count, 
+    	sum(case when viral_actions.platform = 'product4' then 1 else 0 end) as product4_count,
     	count(*) as total_count")
         .group("date(convert_tz(viral_actions.created_at,'+00:00','+09:00'))")
         .order("date(viral_actions.created_at)")
     @viral_platform_counts_sum = ViralAction.select(
-      "sum(case when viral_actions.platform = 'kakaostory' then 1 else 0 end) as kakaostory_count, 
-      sum(case when viral_actions.platform = 'kakaotalk' then 1 else 0 end) as kakaotalk_count, 
-      sum(case when viral_actions.platform = 'purchase' then 1 else 0 end) as purchase_count, 
-      sum(case when viral_actions.platform = 'youtube' then 1 else 0 end) as youtube_count, 
-      sum(case when viral_actions.platform = 'Youtube_thumb_1' then 1 else 0 end) as youtube_thumb_1_count,
-      sum(case when viral_actions.platform = 'Youtube_thumb_2' then 1 else 0 end) as youtube_thumb_2_count,
-      sum(case when viral_actions.platform = 'Youtube_thumb_3' then 1 else 0 end) as youtube_thumb_3_count, 
+      "sum(case when viral_actions.platform = 'product1' then 1 else 0 end) as product1_count, 
+      sum(case when viral_actions.platform = 'product2' then 1 else 0 end) as product2_count, 
+      sum(case when viral_actions.platform = 'product3' then 1 else 0 end) as product3_count, 
+      sum(case when viral_actions.platform = 'product4' then 1 else 0 end) as product4_count, 
       count(*) as total_count") 
   end
 end
